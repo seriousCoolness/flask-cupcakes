@@ -1,0 +1,8 @@
+flask
+flask-debugtoolbar
+flask-sqlalchemy
+ipython
+Jinja2
+psycopg2-binary
+requests
+sqlalchemy
