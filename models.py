@@ -22,4 +22,12 @@ class Cupcake(db.Model):
 
     image = db.Column(db.Text, nullable=False, default='https://tinyurl.com/demo-cupcake')
 
-    
+    def serialize(self):
+        """Converts instance of model into dict for json"""
+        return {
+            'id':self.id,
+            'flavor':self.flavor,
+            'size':self.size,
+            'rating':self.rating,
+            'image':self.image
+        }
